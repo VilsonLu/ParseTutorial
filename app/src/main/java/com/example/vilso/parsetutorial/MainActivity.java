@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void done(List<ParseObject> list, ParseException e) {
                 if(e == null) {
+                    // Testing Branches
                     if(list.size() > 0){
                         for(ParseObject item : list) {
                             lblScore.setText("Current Score: " + item.getInt("CurrentScore"));
